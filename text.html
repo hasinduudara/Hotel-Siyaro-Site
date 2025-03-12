@@ -3,159 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Haven Hotel</title>
-    <!-- Bootstrap CSS -->
+    <title>Hotel Siyaro</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <style>
+      .hero-content {
+        margin-top: -300px;
+      }
+    </style>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Luxury Haven</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#rooms">Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#amenities">Amenities</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <img
+      src="/assets/images/background image-2.jpg"
+      class="img-fluid"
+      alt="bg-img"
+    />
+
+    <div
+      class="hero position-relative d-flex justify-content-center align-items-center text-center"
+    >
+      <div class="hero-content position-relative">
+        <h1 class="text-light">Hotel Siyaro</h1>
+        <p class="text-light">
+          Come to Hotel Siyaro for wonderful moments and a relaxing break from
+          life.
+        </p>
+        <a href="#" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+
+    <div class="container p-3 mt-3 bg-white rounded shadow">
+      <form class="row g-2">
+        <div class="col-md-3">
+          <label class="form-label">Check-in</label>
+          <input type="date" class="form-control" />
         </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="bg-dark text-light p-5 p-lg-0 pt-lg-5">
-      <div class="container-fluid">
-        <div
-          class="row align-items-center"
-          style="
-            height: 90vh;
-            background-image: url('/assets/images/background image-2.jpg');
-            background-size: cover;
-            background-position: center;
-          "
-        >
-          <div class="col-lg-6 text-center text-lg-start">
-            <h1 class="display-4">Experience Luxury Redefined</h1>
-            <p class="lead my-4">
-              Your perfect getaway destination with world-class amenities and
-              service
-            </p>
-            <a href="#contact" class="btn btn-primary btn-lg">Book Now</a>
-          </div>
+        <div class="col-md-3">
+          <label class="form-label">Check-out</label>
+          <input type="date" class="form-control" />
         </div>
-      </div>
-    </header>
-
-    <!-- Rooms Section -->
-    <section id="rooms" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Our Rooms</h2>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100">
-              <img
-                src="/assets/images/background image-2.jpg"
-                class="card-img-top"
-                alt="Deluxe Room"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Deluxe Room</h5>
-                <p class="card-text">
-                  Spacious rooms with premium amenities and stunning city views.
-                </p>
-                <a href="#" class="btn btn-outline-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <!-- Repeat similar card structure for other rooms -->
+        <div class="col-md-3">
+          <label class="form-label">Guests</label>
+          <select class="form-select">
+            <option>1 Room, 1 Adult, 0 Children</option>
+            <option>1 Room, 2 Adults, 0 Children</option>
+            <option>2 Rooms, 4 Adults, 2 Children</option>
+          </select>
         </div>
-      </div>
-    </section>
-
-    <!-- Amenities Section -->
-    <section id="amenities" class="bg-light py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Amenities</h2>
-        <div class="row g-4 text-center">
-          <div class="col-md-3">
-            <div class="p-3 border rounded">
-              <h4>24/7 Room Service</h4>
-              <p>Enjoy gourmet meals anytime in your room</p>
-            </div>
-          </div>
-          <!-- Add more amenities -->
+        <div class="col-md-2">
+          <label class="form-label">Special Code</label>
+          <input type="text" class="form-control" placeholder="Enter Code" />
         </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Contact Us</h2>
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <textarea
-                  class="form-control"
-                  rows="5"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary w-100">
-                Send Message
-              </button>
-            </form>
-          </div>
+        <div class="col-md-1 d-flex align-items-end">
+          <button class="btn btn-warning w-100">Search</button>
         </div>
-      </div>
-    </section>
+      </form>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-4">
-      <div class="container text-center">
-        <p>&copy; 2023 Luxury Haven Hotel. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
