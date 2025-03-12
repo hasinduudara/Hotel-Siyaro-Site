@@ -111,17 +111,21 @@
     </section>
 
     <section id="hero-section">
-      <!-- Add Hero Text -->
       <div
         class="hero position-relative d-flex justify-content-center align-items-center text-center"
+        style="min-height: 80vh"
       >
-        <img
-          src="/assets/images/background image-2.jpg"
-          class="img-fluid"
-          alt="bg image"
-          style="min-height: 80vh no-repeat center center/cover"
-        />
-        <div class="hero-content position-relative">
+        <!-- Background Image -->
+        <div class="position-absolute top-0 start-0 w-100 h-100">
+          <img
+            src="/assets/images/background image-2.jpg"
+            class="img-fluid w-100 h-100 object-fit-cover"
+            alt="bg image"
+          />
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content position-relative z-index-1">
           <h1 class="text-light display-4 fw-bold fs-2">Hotel Siyaro</h1>
           <p class="text-light fs-5">
             Come to Hotel Siyaro for wonderful moments and a relaxing break from
