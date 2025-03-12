@@ -15,6 +15,8 @@
     <title>Hotel Siyaro</title>
     <link rel="icon" href="/assets/images/hotel-icon.png" />
 
+    <!-- <link rel="stylesheet" href="/css/hero-section.css" /> -->
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,9 +27,9 @@
   <body>
     <section id="header-section">
       <!-- Start Navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand text-light" href="#">
             <img
               src="/assets/images/hotel-icon.png"
               alt="Logo"
@@ -51,27 +53,40 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Booking</a>
+                <a class="nav-link active text-light" href="#">Booking</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-disabled="true">Rooms</a>
+                <a class="nav-link active text-light" aria-disabled="true"
+                  >Rooms</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-disabled="true"
+                <a class="nav-link active text-light" aria-disabled="true"
                   >Offers & Packages</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-disabled="true">Discover</a>
+                <a class="nav-link active text-light" aria-disabled="true"
+                  >Discover</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-disabled="true">Gallery</a>
+                <a class="nav-link active text-light" aria-disabled="true"
+                  >Gallery</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-disabled="true">Join Now</a>
+                <a class="nav-link active text-light" aria-disabled="true"
+                  >Join Now</a
+                >
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -81,7 +96,7 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-outline-light" type="submit">
                 Search
               </button>
             </form>
@@ -89,7 +104,9 @@
         </div>
       </nav>
       <!-- End Navbar -->
+    </section>
 
+    <section id="hero-section">
       <!-- Start Home Video -->
       <div class="container-fluid p-0">
         <div class="row g-0">
@@ -103,6 +120,8 @@
                 class="w-100"
                 style="object-fit: cover"
               ></video>
+
+              <!-- Start Video Text -->
               <div
                 class="position-absolute top-100 start-50 translate-middle text-white text-center"
               >
@@ -112,6 +131,7 @@
                   break from life.
                 </p>
               </div>
+              <!-- End Video Text -->
 
               <!-- Start Hotel Booking Search Bar -->
               <div class="container mt-4 position-relative">
