@@ -10,42 +10,67 @@
     />
   </head>
   <body>
-    <div
-      class="container d-flex justify-content-center align-items-center vh-100"
+    <button
+      class="btn btn-primary w-100"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
     >
-      <div
-        class="row bg-white shadow-lg rounded-4 overflow-hidden"
-        style="max-width: 900px"
-      >
-        <div class="col-md-6 p-0">
-          <img
-            src="/assets/images/hotel img 1.jpg"
-            class="img-fluid w-100 h-100"
-            alt="Hotel Siyaro"
-          />
+      Toggle right offcanvas
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel">Booking Now</h5> -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <p class="text-center">
+          Reserve your stay with us for a comfortable and unforgettable
+          experience. Book now!
+        </p>
+
+        <p class="text-center">Check Availability</p>
+
+        <div class="text-center border border-primary">
+          <p class="pt-1">Check In Date</p>
+          <input type="date" class="form-control" />
         </div>
-        <div class="col-md-6 p-4">
-          <h2 class="fw-bold">Welcome to Hotel Siyaro</h2>
-          <h4 class="text-muted">A Hidden Paradise in the Heart of Nature</h4>
-          <p class="fst-italic text-secondary">
-            Nestled deep within the lush forests of Sri Lanka,
-            <b>Hotel Siyaro</b> is a breathtaking 5-star retreat where luxury
-            meets tranquility. Surrounded by towering trees, soothing bird
-            songs, and fresh, unpolluted air, our independent hotel offers an
-            exclusive escape from the ordinary.
-          </p>
-          <p class="fst-italic text-secondary">
-            Indulge in world-class hospitality, elegant accommodations, and
-            exquisite dining, all designed to immerse you in the serene beauty
-            of nature. Whether you seek relaxation, adventure, or a romantic
-            getaway, <b>Hotel Siyaro</b> promises an unforgettable experience in
-            the heart of the wilderness.
-          </p>
-          <h5 class="fw-bold">
-            Discover peace.<br />Discover luxury. Discover Hotel Siyaro.
-          </h5>
-          <a href="#" class="btn btn-primary fw-bold mt-3">Booking Now</a>
+
+        <div class="text-center border border-primary mt-3">
+          <p class="pt-1">Check Out Date</p>
+          <input type="date" class="form-control" />
         </div>
+
+        <!-- <div class="text-center border border-primary mt-3">
+          <p class="pt-1">Enter Promo Code</p>
+          <input type="text" class="form-control" />
+        </div> -->
+
+        <button type="button" class="btn btn-dark text-white w-100 mt-3">
+          Book Now
+        </button>
+
+        <p class="text-center mt-3">Are You Travelling for Business?</p>
+
+        <p class="text-center mt-3">
+          Save an additional 15% on your stay and enjoy a host of benefits.
+        </p>
+
+        <button type="button" class="btn btn-dark text-white w-100 mt-2">
+          Get Offer
+        </button>
       </div>
     </div>
 

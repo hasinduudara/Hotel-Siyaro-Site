@@ -59,7 +59,9 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#">Booking</a>
+                <a class="nav-link active text-light" href="#home-about"
+                  >Booking</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link active text-light" aria-disabled="true"
@@ -164,38 +166,6 @@
       <!-- End Hotel Booking Bar -->
     </section>
 
-    <!-- <section id="booking-side-bar">
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight"
-        aria-controls="offcanvasRight"
-      >
-        Toggle right offcanvas
-      </button>
-
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasRight"
-        aria-labelledby="offcanvasRightLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel">
-            Offcanvas right
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">...</div>
-      </div>
-    </section> -->
-
     <section id="home-about">
       <div
         class="container d-flex justify-content-center align-items-center vh-100"
@@ -212,7 +182,7 @@
             />
           </div>
           <div class="col-md-6 p-4">
-            <h2 class="fw-bold">Welcome to Hotel Siyaro</h2>
+            <h2 class="fw-bold">Welcome To Hotel Siyaro</h2>
             <h4 class="text-muted">A Hidden Paradise in the Heart of Nature</h4>
             <p class="fst-italic text-black">
               Nestled deep within the lush forests of Sri Lanka,
@@ -229,9 +199,82 @@
               in the heart of the wilderness.
             </p>
             <h5 class="fw-bold">
-              Discover peace.<br />Discover luxury. Discover Hotel Siyaro.
+              Discover Peace.<br />Discover luxury. Discover Hotel Siyaro.
             </h5>
-            <a href="#" class="btn btn-primary fw-bold mt-3">Booking Now</a>
+
+            <!-- booking side bar -->
+            <button
+              class="btn btn-primary mt-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+            >
+              Booking Now
+            </button>
+
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                  Offcanvas right
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <p class="text-center">
+                  Reserve your stay with us for a comfortable and unforgettable
+                  experience. Book now!
+                </p>
+
+                <p class="text-center">Check Availability</p>
+
+                <div class="text-center border border-primary">
+                  <p class="pt-1">Check In Date</p>
+                  <input type="date" class="form-control" />
+                </div>
+
+                <div class="text-center border border-primary mt-3">
+                  <p class="pt-1">Check Out Date</p>
+                  <input type="date" class="form-control" />
+                </div>
+
+                <!-- <div class="text-center border border-primary mt-3">
+                  <p class="pt-1">Enter Promo Code</p>
+                  <input type="text" class="form-control" />
+                </div> -->
+
+                <button
+                  type="button"
+                  class="btn btn-dark text-white w-100 mt-3"
+                >
+                  Book Now
+                </button>
+
+                <p class="text-center mt-3">Are You Travelling for Business?</p>
+
+                <p class="text-center mt-3">
+                  Save an additional 15% on your stay and enjoy a host of
+                  benefits.
+                </p>
+
+                <button
+                  type="button"
+                  class="btn btn-dark text-white w-100 mt-2"
+                >
+                  Get Offer
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
