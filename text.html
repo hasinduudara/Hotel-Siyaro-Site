@@ -2,69 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hotel Siyaro</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      .hero-content {
-        margin-top: -300px;
-      }
-    </style>
   </head>
   <body>
-    <img
-      src="/assets/images/background image-2.jpg"
-      class="img-fluid"
-      alt="bg-img"
-    />
-
     <div
-      class="hero position-relative d-flex justify-content-center align-items-center text-center"
+      class="container d-flex justify-content-center align-items-center vh-100"
     >
-      <div class="hero-content position-relative">
-        <h1 class="text-light">Hotel Siyaro</h1>
-        <p class="text-light">
-          Come to Hotel Siyaro for wonderful moments and a relaxing break from
-          life.
-        </p>
-        <a href="#" class="btn btn-primary">Book Now</a>
+      <div
+        class="row bg-white shadow-lg rounded-4 overflow-hidden"
+        style="max-width: 900px"
+      >
+        <div class="col-md-6 p-0">
+          <img
+            src="/assets/images/hotel img 1.jpg"
+            class="img-fluid w-100 h-100"
+            alt="Hotel Siyaro"
+          />
+        </div>
+        <div class="col-md-6 p-4">
+          <h2 class="fw-bold">Welcome to Hotel Siyaro</h2>
+          <h4 class="text-muted">A Hidden Paradise in the Heart of Nature</h4>
+          <p class="fst-italic text-secondary">
+            Nestled deep within the lush forests of Sri Lanka,
+            <b>Hotel Siyaro</b> is a breathtaking 5-star retreat where luxury
+            meets tranquility. Surrounded by towering trees, soothing bird
+            songs, and fresh, unpolluted air, our independent hotel offers an
+            exclusive escape from the ordinary.
+          </p>
+          <p class="fst-italic text-secondary">
+            Indulge in world-class hospitality, elegant accommodations, and
+            exquisite dining, all designed to immerse you in the serene beauty
+            of nature. Whether you seek relaxation, adventure, or a romantic
+            getaway, <b>Hotel Siyaro</b> promises an unforgettable experience in
+            the heart of the wilderness.
+          </p>
+          <h5 class="fw-bold">
+            Discover peace.<br />Discover luxury. Discover Hotel Siyaro.
+          </h5>
+          <a href="#" class="btn btn-primary fw-bold mt-3">Booking Now</a>
+        </div>
       </div>
-    </div>
-
-    <div class="container p-3 mt-3 bg-white rounded shadow">
-      <form class="row g-2">
-        <div class="col-md-3">
-          <label class="form-label">Check-in</label>
-          <input type="date" class="form-control" />
-        </div>
-        <div class="col-md-3">
-          <label class="form-label">Check-out</label>
-          <input type="date" class="form-control" />
-        </div>
-        <div class="col-md-3">
-          <label class="form-label">Guests</label>
-          <select class="form-select">
-            <option>1 Room, 1 Adult, 0 Children</option>
-            <option>1 Room, 2 Adults, 0 Children</option>
-            <option>2 Rooms, 4 Adults, 2 Children</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label class="form-label">Special Code</label>
-          <input type="text" class="form-control" placeholder="Enter Code" />
-        </div>
-        <div class="col-md-1 d-flex align-items-end">
-          <button class="btn btn-warning w-100">Search</button>
-        </div>
-      </form>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-style=" min-height: 80vh; background: url('/assets/images/background\
-image-2.jpg') no-repeat center center/cover; " style="object-fit: cover"
